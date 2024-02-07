@@ -1,10 +1,10 @@
 import React from "react";
 import {
-    FaStore,
-    FaBriefcase,
-    FaBloggerB,
-    FaHotel,
-    FaArrowRight,
+  FaStore,
+  FaBriefcase,
+  FaBloggerB,
+  FaHotel,
+  FaArrowRight,
 } from "react-icons/fa";
 import { BiSolidBriefcaseAlt } from "react-icons/bi";
 import { MdEmojiEvents } from "react-icons/md";
@@ -90,11 +90,11 @@ const Hero = () => {
         </div>
       </div>
       {/* one platform section */}
-      <div className="my-[140px] mx-20">
+      <div className="my-[140px] container   xl:mx-auto ">
         <h1 className="my-[80px] text-6xl">
           One platform, <br /> infinite possibilities
         </h1>
-        <div className="grid grid-cols-3 gap-14">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-14">
           <div className="border-t-2 border-black text-center">
             <h1 className="text-2xl my-2 font-semibold">Unlimited creation</h1>
             <p className="text-justify">

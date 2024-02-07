@@ -5,7 +5,8 @@ import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import Logo2 from "../assets/logo2.png";
 
-// navbar data
+// components
+import { Buttons } from "./Buttons";
 
 export const NavBar = () => {
   const [NavbarData, setNavabarData] = useState([
@@ -128,10 +129,26 @@ export const NavBar = () => {
       name: "Enterprise",
     },
   ]);
+
+  // nav change color
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeColor);
   return (
-    <div className=" hover:bg-white transition-all duration-300 border-b border-white/30 group pt-4 shadow-lg  w-full">
+    <div
+      className={` ${
+        color ? "bg-primary/55" : "bg-transparent "
+      } hover:bg-white transition-all duration-300 border-b border-white/30 group pt-4 h-24 items-center  shadow-lg  w-full`}
+    >
       <div className="container xl:mx-20  flex  items-center  w-full">
-        <div className="mr-16">
+        <div className="mr-16 min-w-max">
           <img
             className=" hidden group-hover:flex "
             src={Logo}
@@ -165,7 +182,7 @@ export const NavBar = () => {
                     prev.map((item) => ({ ...item, active: false }))
                   );
                 }}
-                className="relative text-[20px] font-semibold group "
+                className="relative text-[20px] font-normal group "
                 key={element.id}
               >
                 <a href="#">{element.name}</a>
@@ -192,6 +209,9 @@ export const NavBar = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div>
+          <Buttons />
         </div>
       </div>
       ;
