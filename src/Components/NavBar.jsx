@@ -165,8 +165,8 @@ export const NavBar = () => {
     },
   ]);
   return (
-    <div className=" hover:bg-white transition-all duration-300 border-b border-white/30 group pt-4  w-full">
-      <div className="container mx-20  flex  items-center  w-full">
+    <div className=" hover:bg-white transition-all duration-300 border-b border-white/30 group pt-4 shadow-lg  w-full">
+      <div className="container xl:mx-20  flex  items-center  w-full">
         <div className="mr-16">
           <img
             className=" hidden group-hover:flex "
@@ -201,14 +201,14 @@ export const NavBar = () => {
                     prev.map((item) => ({ ...item, active: false }))
                   );
                 }}
-                className=""
+                className="relative text-[20px] font-semibold group "
                 key={element.id}
               >
                 <a href="#">{element.name}</a>
                 {element.Subname && element.active && (
-                  <div>
-                    <div>
-                      <ul className=" hidden hover:block ">
+                  <div className=" ">
+                    <div className=" bg-white absolute font-Montserrat justify-start pt-12 items-center w-[320px] h-[340px] p-5.5 lg:flex gap-10">
+                      <ul className="  ">
                         {element?.Subname?.map((subdata) => (
                           <li key={subdata.title}>
                             <a href="#">{subdata.title}</a>

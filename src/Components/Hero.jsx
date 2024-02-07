@@ -5,21 +5,29 @@ import { MdEmojiEvents } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 
 const Hero = () => {
-    return (
-        <section className=''>
-            <div className="h-full w-full bg-gradient-to-tr from-[#5a6ce6]  via-[#8a92b8]  % to-[#26338A]">
-                <div className='p-8 sm:p-28'>
-                    <div className='text-center'>
-                        <h1 className='text-center text-5xl sm:text-5xl lg:text-7xl'>Create a website without limits</h1>
-                        <p className='text-center my-8 text-2xl sm:text-xl lg:text-3xl'>What kind of website would you like to create ?</p>
-                    </div>
-                    <div className="text-center">
-                        <div className='flex justify-center'>
-                            <div className='grid grid-cols-2 sm:grid-cols-4 items-center gap-3'>
-                                <a href="#" className="flex items-center justify-center p-2 gap-3 rounded-full border border-black text-[15px] cursor-pointer sm:text-[20px] sm:justify-around sm:p-1">
-                                    <FaStore />
-                                    Online Store
-                                </a>
+  return (
+    <section className="h-screen w-full bg-gradient-to-tr from-[#5a6ce6]  via-[#8a92b8]  % to-[#26338A] ">
+      {" "}
+      {/*the is a backgroung color:bg-accent*/}
+      <div className="p-28">
+        <div className="text-center">
+          <h1 className="text-center text-6xl">
+            Create a website without limits
+          </h1>
+          <p className="text-center my-8 text-xl">
+            What kind of website would you like to create ?
+          </p>
+        </div>
+        <div className="">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-4 items-center gap-3">
+              <a
+                href="#"
+                className="flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer hover:bg-gray-600"
+              >
+                <FaStore />
+                Online Store
+              </a>
 
                                 <a href="#" className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-[15px] cursor-pointer sm:text-[20px] sm:justify-around sm:p-1'>
                                     <FaBriefcase />

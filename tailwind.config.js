@@ -20,7 +20,8 @@ export default {
       colors: {
         primary: "#131424",
         secondary: "#393A47",
-        accent: "#e31765",
+        tertiary: "#BFC2CA",
+        accent: "#AF1F5F",
       },
       keyframes: {
         zoomIn: {
