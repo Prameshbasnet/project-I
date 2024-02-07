@@ -18,10 +18,6 @@ export const NavBar = () => {
           description: "Create amazing designs and develop your brand on DnD",
         },
         {
-          title: "Web Design",
-          description: "Create amazing designs and develop your brand on DnD",
-        },
-        {
           title: "Web Templates",
           description:
             "Explore 200+ designer made templates & start with the right for you",
@@ -42,20 +38,7 @@ export const NavBar = () => {
         },
         {
           title: "WEBSITE ESSENTIALS",
-          subtitle: [
-            {
-              title: "Custom Domain Name",
-            },
-            {
-              title: "Secure Web Hosting",
-            },
-            {
-              title: "Logo Maker",
-            },
-            {
-              title: "SEO Tools",
-            },
-          ],
+          description: "Learn how to build your own website",
         },
         {
           title: "Become a Partner",
@@ -98,26 +81,7 @@ export const NavBar = () => {
         },
         {
           title: "Tools & Features",
-          subtitle: [
-            {
-              title: "Online Payments",
-            },
-            {
-              title: "Multichannel Sales",
-            },
-            {
-              title: "Point of sale",
-            },
-            {
-              title: "Analytics & Reports",
-            },
-            {
-              title: "Business Tools",
-            },
-            {
-              title: "Event Creation",
-            },
-          ],
+          description: "Find the right tools for your business",
         },
       ],
     },
@@ -207,11 +171,18 @@ export const NavBar = () => {
                 <a href="#">{element.name}</a>
                 {element.Subname && element.active && (
                   <div className=" ">
-                    <div className=" bg-white absolute font-Montserrat justify-start pt-12 items-center w-[320px] h-[340px] p-5.5 lg:flex gap-10">
-                      <ul className="  ">
+                    <div className=" bg-white absolute font-Montserrat justify-start pt-12 items-center w-max h-max p-5.5 lg:flex gap-10">
+                      <ul className="gap-x-6 py-10  font-normal ">
                         {element?.Subname?.map((subdata) => (
                           <li key={subdata.title}>
-                            <a href="#">{subdata.title}</a>
+                            <div>
+                              <a href="#">{subdata.title}</a>
+                            </div>
+                            <div>
+                              <p className="font-light text-[12px]">
+                                {subdata.description}
+                              </p>
+                            </div>
                           </li>
                         ))}
                       </ul>
