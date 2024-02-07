@@ -6,17 +6,20 @@ import { SlCalender } from "react-icons/sl";
 
 const Hero = () => {
     return (
-        <section className='bg-accent'>
+        <section className=''>  {/*the is a backgroung color:bg-accent*/}
             <div className='p-28'>
-                <div className=''>
+                <div className='text-center'>
                     <h1 className='text-center text-6xl'>Create a website without limits</h1>
                     <p className='text-center my-8 text-xl'>What kind of website would you like to create ?</p>
+                </div>
+                <div className="">
                     <div className='flex justify-center'>
                         <div className='grid grid-cols-4 items-center gap-3'>
-                            <a className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer'>
+                            <a href="#" className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer hover:bg-gray-600'>
                                 <FaStore />
                                 Online Store
                             </a>
+
                             <a href="#" className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer'>
                                 <FaBriefcase />
                                 Portfolio
@@ -31,7 +34,7 @@ const Hero = () => {
                             </a>
                             <a href="#" className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer'>
                                 <SlCalender />
-                                Services Business
+                                Business
                             </a>
                             <a href="#" className='flex items-center justify-center p-2 gap-3 rounded-full border border-black text-2xl cursor-pointer'>
                                 <FaHotel />
@@ -46,10 +49,11 @@ const Hero = () => {
                             </a>
                         </div>
                     </div>
-
+                    <button>
+                        Get Started
+                    </button>
                 </div>
             </div>
-
         </section>
     )
 }
