@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { FaStore, FaBriefcase, FaBloggerB, FaHotel } from "react-icons/fa";
 import { BiSolidBriefcaseAlt } from "react-icons/bi";
 import { MdEmojiEvents } from "react-icons/md";
@@ -7,7 +7,7 @@ import { SlCalender } from "react-icons/sl";
 const Hero = () => {
     return (
         <section className='bg-accent'>
-            <div className='p-[130px]'>
+            <div className='p-28'>
                 <div className=''>
                     <h1 className='text-center text-6xl'>Create a website without limits</h1>
                     <p className='text-center my-8 text-xl'>What kind of website would you like to create ?</p>
