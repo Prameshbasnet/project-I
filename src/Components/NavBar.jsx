@@ -119,6 +119,48 @@ const NavbarData = [
       },
     ],
   },
+  {
+    id: 3,
+    name: "Assets",
+    Subname: [
+      {
+        title: "All Features",
+        description:
+          "Find everything you need to build your site and run your business",
+      },
+      {
+        title: "Web Design Inspiration",
+        description:
+          "Get insired by unique design & powerful websites built on Dnd",
+      },
+      {
+        title: "DnD Learn",
+        description:
+          "Take video courses & lessons and gain the skills you need to succeed online",
+      },
+      {
+        title: "DnD Blog",
+        description:
+          "Get business tips, online marketting guidance, and the latest websites trends",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Pricing",
+  },
+  {
+    id: 5,
+    name: "Support",
+  },
+  {
+    id: 6,
+    name: "DnD Studio",
+  },
+  {
+    id: 7,
+    name: "Enterprise",
+  },
 ];
 
 export const NavBar = () => {
