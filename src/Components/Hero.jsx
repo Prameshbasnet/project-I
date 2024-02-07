@@ -6,7 +6,7 @@ import { SlCalender } from "react-icons/sl";
 
 const Hero = () => {
   return (
-    <section className="bg-accent">
+    <section className="h-screen w-full bg-gradient-to-tr from-[#5a6ce6]  via-[#8a92b8]  % to-[#26338A] ">
       <div className="p-28">
         <div className="">
           <h1 className="text-center text-6xl">
