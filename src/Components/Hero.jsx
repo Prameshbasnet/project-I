@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="text-center text-6xl">
             Create a website without limits
           </h1>
-          <p className="text-center my-5 text-xl">
+          <p className="text-center my-8 text-xl">
             What kind of website would you like to create ?
           </p>
           <div className="flex justify-center">
