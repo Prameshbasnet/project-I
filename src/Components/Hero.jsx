@@ -7,7 +7,7 @@ import { SlCalender } from "react-icons/sl";
 const Hero = () => {
     return (
         <section className='bg-accent'>
-            <div className='p-28'>
+            <div className='p-[130px]'>
                 <div className=''>
                     <h1 className='text-center text-6xl'>Create a website without limits</h1>
                     <p className='text-center my-8 text-xl'>What kind of website would you like to create ?</p>
