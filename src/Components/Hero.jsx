@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  FaStore,
-  FaBriefcase,
-  FaBloggerB,
-  FaHotel,
-  FaArrowRight,
+    FaStore,
+    FaBriefcase,
+    FaBloggerB,
+    FaHotel,
+    FaArrowRight,
 } from "react-icons/fa";
 import { BiSolidBriefcaseAlt } from "react-icons/bi";
 import { MdEmojiEvents } from "react-icons/md";
